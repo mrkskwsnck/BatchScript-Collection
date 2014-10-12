@@ -1,7 +1,7 @@
 Batch-Collection
 ================
 
-Collection of Batch scripts for the Windows command prompt (CMD.EXE)
+Collection of Batch scripts for the Windows command interpreter (CMD.EXE)
 
 finded - Find Empty Directories
 -------------------------------
