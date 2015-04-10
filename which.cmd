@@ -13,22 +13,23 @@ SET PATH=.;%PATH%
 
 REM Iterate through the path extensions pushed as suffix to the given argument
 FOR %%E IN (%PATHEXT%) DO (
-	SET FILE=%1%%E
-	FOR %%F IN (!FILE!) DO (
-		SET WHICH=%%~$PATH:F
-		IF DEFINED WHICH (
-			ECHO !WHICH!
+  SET FILE=%1%%E
+  FOR %%F IN (!FILE!) DO (
+    SET WHICH=%%~$PATH:F
+    IF DEFINED WHICH (
+      ECHO !WHICH!
 
-			REM Exit on first occurrence
-			GOTO END
-		)
-	)
+      REM Should have an option switch whether to print all occurrences or exit 
+      REM on the first occurrence optionally
+
+      REM Exit on first occurrence
+      GOTO :EOF
+    )
+  )
 )
 
 REM Look up the path environment for the exactly given argument
 SET WHICH=%~$PATH:1
 IF DEFINED WHICH ECHO !WHICH!
-
-:END
 
 ENDLOCAL
