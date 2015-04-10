@@ -3,6 +3,13 @@ Batch-Collection
 
 Collection of Batch scripts for the Windows command interpreter (CMD.EXE)
 
+
+Command here
+------------
+
+Open command prompt (CMD.EXE) with your working directory from the context menu of the Windows Explorer.
+
+
 finded - Find Empty Directories
 -------------------------------
 
