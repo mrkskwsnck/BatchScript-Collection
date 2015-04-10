@@ -17,6 +17,12 @@ Open command prompt (CMD.EXE) with your working directory from the context menu
 of the Windows Explorer.
 
 
+DD-WRT router reconnect batch script for Windows
+------------------------------------------------
+
+Performs a reconnect of a DD-WRT based routers internet connection.
+
+
 finded - Find Empty Directories
 -------------------------------
 

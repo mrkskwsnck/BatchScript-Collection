@@ -1,0 +1,39 @@
++--------------------------------------------------+
+| DD-WRT router reconnect batch script for Windows |
++--------------------------------------------------+
+
+
+This script provides a more interactive Windows batch file for the command line 
+console to reconnect a routers internet connection for routers running with the 
+DD-WRT firmware.
+
+
+Setup
+=====
+
+Just save the above code to a BAT or a CMD file respectively (e.g. 
+ddwrtreconnect.cmd) somewhere within your path environment on your computer.
+
+
+Note
+----
+
+You need to have cURL installed and it needs to be present within the path 
+environment on your computer.
+
+
+Usage
+=====
+
+All you need to do is to give the IP-Address and the Username as parameters to 
+the script (e.g. ddwrtreconnect 192.168.1.1 YourUserName). After that you will 
+be asked for the Password so the script can execute the administrative 
+reconnect command.
+
+
+--
+Related Resources:
+* http://www.dd-wrt.com/phpBB2/viewtopic.php?t=40446
+* http://www.paehl.de/reconnect/
+* http://curl.haxx.se/
+* http://en.wikipedia.org/wiki/Batch_file
