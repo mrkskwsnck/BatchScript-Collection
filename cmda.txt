@@ -1,0 +1,49 @@
++-----------------------+
+| CMDA sudo for Windows |
++-----------------------+
+
+This is a Windows Batch file to provide a well known sudo console command like solution for Windows 
+without the use of third party software. It is very useful for everyone who is using Windows as a 
+standard user without administrative privileges. This script just encapsulates the CMD console 
+command with the RUNAS console command. So the script acts as an ordinary CMD console command with 
+all its known features.
+
+Often you cannot run applications or execute console commands as standard user because you need 
+administrative privileges. In this case you need to switch to an user with administrative 
+privileges to do your work. Here CMDA is the solution because it runs any application or executes 
+any console command passed to the script with administrative privileges. So you won't need to 
+switch the user account anymore.
+
+This script is called CMDA because it just executes the CMD console command with administrative 
+privileges. It takes all the parameters that are supported by CMD console command and passes them 
+through to the CMD console command itself. All given parameters will be respected during execution 
+of the CMDA script. Anyway in order to using this script you will be asked for the Administrator 
+password which is needed.
+
+
+Setup
+=====
+
+To use this script you need to save it either as BAT or as CMD file respectively and place it 
+inside a directory which must be present in the path environment on your computer.
+
+
+Usage
+=====
+
+As an example to be able to change the firewall settings in the Control Panel of Windows) you need 
+to run this script as follows: 
+
+	CMDA /C START firewall.cpl 
+
+Here the /C parameter closes the appearing console window immediatelly after a successfull 
+returning of the script. With the START console command the given application (the firewall 
+settings in this example) will be opened in a new process, so the console window in the background 
+is not needed anymore and can be closed. This way you are able to create a shortcut for any purpose 
+you can imagine.
+
+
+--
+Related resources:
+* http://en.wikipedia.org/wiki/Batch_file
+* http://noadmin.de/cmda-quasi-sudo-fuer-windows/

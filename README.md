@@ -4,6 +4,12 @@ Batch-Collection
 Collection of Batch scripts for the Windows command interpreter (CMD.EXE)
 
 
+CMDA sudo for Windows
+---------------------
+
+Just a native sudo for Windows solution as batch script.
+
+
 Command here
 ------------
 
