@@ -4,6 +4,14 @@ Batch-Collection
 Collection of Batch scripts for the Windows command interpreter (CMD.EXE)
 
 
+BackupMachine
+-------------
+
+A script (prototype) to perform full and/or incremental backups using rsync. Its 
+name implies to work similar to Apple's Time Machine backend. As the main 
+feature *hard links* are created to a previous backup. Use at your own risk!
+
+
 CMDA sudo for Windows
 ---------------------
 
