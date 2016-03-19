@@ -1,5 +1,5 @@
-Batch-Collection
-================
+BatchScript-Collection
+======================
 
 Collection of Batch scripts for the Windows command interpreter (CMD.EXE)
 
